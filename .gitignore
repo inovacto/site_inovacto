@@ -1,0 +1,5 @@
+.idea
+.claude-flow
+.claude
+node_modules
+.DS_Store

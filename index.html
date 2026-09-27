@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inovacto Tecnologia | Apps, sistemas, banco de dados, cloud e IA</title>
+  <meta name="description" content="Desenvolvimento de aplicativos e sistemas, banco de dados, cloud computing e inteligência artificial para empresas.">
+  <meta name="theme-color" content="#1a1a1a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inovacto Tecnologia">
+  <meta property="og:description" content="Apps, sistemas, banco de dados, cloud e IA sob medida.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/conthrax-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<!-- Peças do símbolo Inovacto (vetorizado da pasta Arte Inovacto; mesmo desenho de assets/img/simbolo.svg) -->
+<svg width="0" height="0" class="absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="p-bandeira" d="M320 0 L555 130 L555 267 C470 287 392 312 320 342 Z"/>
+    <path id="p-ia" d="M0 252 L233 380 C150 418 72 460 0 508 Z"/>
+    <path id="p-apps" d="M0 678 C62 612 142 551 233 497 L233 1080 L0 952 Z"/>
+    <path id="p-dados" d="M320 450 C392 413 470 380 555 352 L555 1043 L320 915 Z"/>
+    <path id="p-cloud" d="M642 328 C675 319 707 312 740 306 L876 380 L876 1510 L642 1380 Z"/>
+  </defs>
+</svg>
+
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2">Pular para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-40 border-b border-linha bg-white/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-3.5">
+    <a href="#" class="logo" aria-label="Inovacto Tecnologia, início">
+      <svg viewBox="0 0 876 1510" aria-hidden="true">
+        <use href="#p-bandeira" fill="#1a1a1a"/><use href="#p-ia" fill="#00be9c"/><use href="#p-apps" fill="#00be9c"/><use href="#p-dados" fill="#00be9c"/><use href="#p-cloud" fill="#00be9c"/>
+      </svg>
+      <span>
+        <span class="logo-nome">INOVACTO</span>
+        <span class="logo-sub text-grafite">TECNOLOGIA</span>
+      </span>
+    </a>
+
+    <nav aria-label="Principal" class="hidden items-center gap-9 text-[0.9375rem] text-ink-soft md:flex">
+      <a href="#servicos" class="hover:text-ink">Serviços</a>
+      <a href="#processo" class="hover:text-ink">Como trabalhamos</a>
+      <a href="#contato" class="hover:text-ink">Contato</a>
+    </nav>
+
+    <a href="#contato" class="btn btn-dark whitespace-nowrap py-2.5 text-sm">
+      <span class="sm:hidden">Orçamento</span><span class="hidden sm:inline">Pedir orçamento</span>
+    </a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ================= HERO ================= -->
+  <section class="grid md:min-h-[min(46rem,calc(100svh-4.5rem))] md:grid-cols-[1fr_1.12fr]">
+    <div class="flex flex-col justify-center px-5 pb-16 pt-14 md:py-20 md:pr-10 md:pl-[max(1.25rem,calc((100vw-72rem)/2+1.25rem))]">
+      <p class="rotulo text-verde-escuro">Apps · Dados · Cloud · IA</p>
+      <h1 class="mt-6 text-[2.6rem] font-medium leading-[1.02] tracking-[-0.025em] text-balance sm:text-6xl lg:text-[4.1rem]">
+        Software sob medida, do aplicativo ao servidor.
+      </h1>
+      <p class="mt-7 max-w-lg text-lg leading-relaxed text-ink-soft">
+        Desenvolvemos aplicativos e sistemas, estruturamos seus dados, operamos sua infraestrutura em nuvem e colocamos inteligência artificial para trabalhar no seu negócio.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a href="#contato" class="btn btn-primary">Pedir orçamento</a>
+        <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+      </div>
+    </div>
+
+    <!-- Painel grafite: o símbolo montado pelas quatro frentes de trabalho -->
+    <div class="hero-painel hero-arte flex items-center px-5 pb-14 pt-24 text-white md:pb-16 md:pl-[21%] md:pr-[max(1.25rem,calc((100vw-72rem)/2-1rem))] md:pt-16">
+      <div class="mx-auto flex w-full max-w-md flex-col items-center gap-10 sm:flex-row-reverse sm:items-center sm:justify-center md:mx-0 md:max-w-none md:flex-col md:gap-8 xl:flex-row-reverse xl:gap-10">
+        <svg class="hero-marca h-56 w-auto shrink-0 overflow-visible sm:h-72 md:h-60 xl:h-[23rem]" viewBox="0 0 876 1510" role="img" aria-label="Símbolo da Inovacto: quatro barras verdes sustentando uma bandeira branca">
+          <use class="peca peca-cloud" href="#p-cloud"/>
+          <use class="peca peca-dados" href="#p-dados"/>
+          <use class="peca peca-apps" href="#p-apps"/>
+          <use class="peca peca-ia" href="#p-ia"/>
+          <use class="peca peca-bandeira" href="#p-bandeira"/>
+        </svg>
+
+        <ol class="legenda w-full space-y-1 sm:w-[15.5rem] sm:shrink-0" aria-label="Camadas de tecnologia atendidas pela Inovacto">
+          <li class="flex items-center gap-3.5 py-2">
+            <svg class="glifo w-4 text-white" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira" class="on" style="fill:#fff"/><use href="#p-ia"/><use href="#p-apps"/><use href="#p-dados"/><use href="#p-cloud"/></svg>
+            <span><span class="block font-medium">Seu negócio</span><span class="block text-sm text-white/55">No topo, sustentado pelas quatro frentes</span></span>
+          </li>
+          <li>
+            <a href="#svc-apps" data-peca="apps" class="flex items-center gap-3.5 py-2 hover:text-verde">
+              <svg class="glifo w-4 text-white" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps" class="on"/><use href="#p-dados"/><use href="#p-cloud"/></svg>
+              <span><span class="block font-medium">Aplicativos e sistemas</span><span class="block text-sm text-white/55">Web, Android e iOS</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#svc-ia" data-peca="ia" class="flex items-center gap-3.5 py-2 hover:text-verde">
+              <svg class="glifo w-4 text-white" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia" class="on"/><use href="#p-apps"/><use href="#p-dados"/><use href="#p-cloud"/></svg>
+              <span><span class="block font-medium">Inteligência artificial</span><span class="block text-sm text-white/55">Assistentes, automação, busca em documentos</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#svc-dados" data-peca="dados" class="flex items-center gap-3.5 py-2 hover:text-verde">
+              <svg class="glifo w-4 text-white" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps"/><use href="#p-dados" class="on"/><use href="#p-cloud"/></svg>
+              <span><span class="block font-medium">Banco de dados</span><span class="block text-sm text-white/55">Modelagem, performance, migração</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#svc-cloud" data-peca="cloud" class="flex items-center gap-3.5 py-2 hover:text-verde">
+              <svg class="glifo w-4 text-white" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps"/><use href="#p-dados"/><use href="#p-cloud" class="on"/></svg>
+              <span><span class="block font-medium">Cloud computing</span><span class="block text-sm text-white/55">Infraestrutura, deploy e monitoramento</span></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section id="servicos" class="bg-white">
+    <div class="mx-auto max-w-6xl px-5 py-20 md:py-28">
+      <div class="grid gap-6 md:grid-cols-[1fr_1fr] md:items-end">
+        <h2 class="text-4xl font-medium tracking-[-0.02em] sm:text-5xl">O que fazemos</h2>
+        <p class="text-lg leading-relaxed text-ink-soft">Um time só para a solução inteira, sem você precisar coordenar vários fornecedores.</p>
+      </div>
+
+      <div class="mt-14 grid gap-x-16 md:grid-cols-2">
+
+        <article id="svc-apps" class="border-t-2 border-grafite py-10">
+          <div class="flex items-start gap-5">
+            <svg class="glifo w-7 text-grafite" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps" class="on"/><use href="#p-dados"/><use href="#p-cloud"/></svg>
+            <div>
+              <h3 class="text-2xl font-medium tracking-[-0.01em]">Desenvolvimento de apps e sistemas</h3>
+              <p class="mt-3 leading-relaxed text-ink-soft">Aplicativos móveis, sistemas web e APIs construídos para o seu processo, não adaptados de um pacote pronto.</p>
+              <ul class="lista-marca mt-6 space-y-2.5">
+                <li>Apps Android e iOS</li>
+                <li>Sistemas de gestão, portais e painéis</li>
+                <li>Integrações e APIs</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="svc-dados" class="border-t-2 border-grafite py-10">
+          <div class="flex items-start gap-5">
+            <svg class="glifo w-7 text-grafite" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps"/><use href="#p-dados" class="on"/><use href="#p-cloud"/></svg>
+            <div>
+              <h3 class="text-2xl font-medium tracking-[-0.01em]">Banco de dados</h3>
+              <p class="mt-3 leading-relaxed text-ink-soft">Dados organizados, rápidos de consultar e protegidos, seja num projeto novo ou numa base que já cresceu demais.</p>
+              <ul class="lista-marca mt-6 space-y-2.5">
+                <li>Modelagem e otimização de consultas</li>
+                <li>Migração entre bancos e para a nuvem</li>
+                <li>Backup e rotinas de recuperação</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="svc-cloud" class="border-t-2 border-grafite py-10">
+          <div class="flex items-start gap-5">
+            <svg class="glifo w-7 text-grafite" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps"/><use href="#p-dados"/><use href="#p-cloud" class="on"/></svg>
+            <div>
+              <h3 class="text-2xl font-medium tracking-[-0.01em]">Cloud computing</h3>
+              <p class="mt-3 leading-relaxed text-ink-soft">Infraestrutura estável e com custo sob controle, com deploy automatizado e monitoramento contínuo.</p>
+              <ul class="lista-marca mt-6 space-y-2.5">
+                <li>Arquitetura e migração para a nuvem</li>
+                <li>Containers, Kubernetes e CI/CD</li>
+                <li>Redução de custos de infraestrutura</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="svc-ia" class="border-t-2 border-grafite py-10">
+          <div class="flex items-start gap-5">
+            <svg class="glifo w-7 text-grafite" viewBox="0 0 876 1510" aria-hidden="true"><use href="#p-bandeira"/><use href="#p-ia" class="on"/><use href="#p-apps"/><use href="#p-dados"/><use href="#p-cloud"/></svg>
+            <div>
+              <h3 class="text-2xl font-medium tracking-[-0.01em]">Inteligência artificial</h3>
+              <p class="mt-3 leading-relaxed text-ink-soft">IA aplicada a problemas concretos da sua operação, integrada aos sistemas e dados que você já tem.</p>
+              <ul class="lista-marca mt-6 space-y-2.5">
+                <li>Assistentes e atendimento automatizado</li>
+                <li>Busca inteligente em documentos internos</li>
+                <li>Automação de tarefas repetitivas</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESSO (sequência real, por isso numerado) ================= -->
+  <section id="processo" class="relative overflow-hidden bg-nevoa">
+    <!-- Marca d'água, como no papel timbrado -->
+    <svg class="marca-dagua pointer-events-none absolute -right-40 -top-10 hidden h-[130%] w-auto md:block" viewBox="0 0 876 1510" aria-hidden="true">
+      <use href="#p-bandeira"/><use href="#p-ia"/><use href="#p-apps"/><use href="#p-dados"/><use href="#p-cloud"/>
+    </svg>
+
+    <div class="relative mx-auto max-w-6xl px-5 py-20 md:py-28">
+      <h2 class="text-4xl font-medium tracking-[-0.02em] sm:text-5xl">Como trabalhamos</h2>
+      <ol class="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <li class="border-t-[3px] border-verde pt-6">
+          <span class="font-marca text-3xl text-verde-escuro">1</span>
+          <h3 class="mt-4 text-xl font-medium">Entendimento</h3>
+          <p class="mt-2 leading-relaxed text-ink-soft">Conversamos sobre o problema, o público e as restrições do projeto.</p>
+        </li>
+        <li class="border-t-[3px] border-verde pt-6">
+          <span class="font-marca text-3xl text-verde-escuro">2</span>
+          <h3 class="mt-4 text-xl font-medium">Proposta</h3>
+          <p class="mt-2 leading-relaxed text-ink-soft">Você recebe escopo, prazo e investimento por escrito antes de começar.</p>
+        </li>
+        <li class="border-t-[3px] border-verde pt-6">
+          <span class="font-marca text-3xl text-verde-escuro">3</span>
+          <h3 class="mt-4 text-xl font-medium">Desenvolvimento</h3>
+          <p class="mt-2 leading-relaxed text-ink-soft">Entregas em ciclos curtos, com versões para você testar ao longo do caminho.</p>
+        </li>
+        <li class="border-t-[3px] border-verde pt-6">
+          <span class="font-marca text-3xl text-verde-escuro">4</span>
+          <h3 class="mt-4 text-xl font-medium">Operação</h3>
+          <p class="mt-2 leading-relaxed text-ink-soft">Publicamos, monitoramos e seguimos evoluindo a solução com você.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO (verso do cartão de visita: grafite com borda verde) ================= -->
+  <section id="contato" class="border-l-[10px] border-verde bg-grafite text-white">
+    <div class="mx-auto grid max-w-6xl gap-14 px-5 py-20 md:grid-cols-[1fr_1.3fr] md:py-28">
+      <div>
+        <h2 class="text-4xl font-medium tracking-[-0.02em] text-balance sm:text-5xl">Vamos conversar sobre o seu projeto</h2>
+        <p class="mt-5 text-lg leading-relaxed text-white/70">Conte o que você precisa. Respondemos com os próximos passos e uma estimativa inicial.</p>
+
+        <dl class="mt-12 space-y-7">
+          <div>
+            <dt class="rotulo text-verde">E-mail</dt>
+            <dd class="mt-2">
+              <a href="mailto:gustavo@inovacto.com.br" class="text-2xl font-medium break-all hover:text-verde">gustavo@inovacto.com.br</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <!--
+        FORMULÁRIO
+        data-endpoint: URL que recebe o POST (Formspree, sua API Go/Laravel etc.).
+        Se ficar vazio, o envio abre o programa de e-mail do visitante com a mensagem já preenchida.
+      -->
+      <form id="contact-form" data-endpoint="" novalidate class="bg-white p-6 text-ink sm:p-9">
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div class="sm:col-span-1">
+            <label for="nome" class="mb-1.5 block text-sm font-medium">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required class="field">
+          </div>
+          <div class="sm:col-span-1">
+            <label for="telefone" class="mb-1.5 block text-sm font-medium">Telefone <span class="font-normal text-ink-soft">(opcional)</span></label>
+            <input id="telefone" name="telefone" type="tel" autocomplete="tel" class="field">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="mb-1.5 block text-sm font-medium">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required class="field">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="servico" class="mb-1.5 block text-sm font-medium">Serviço</label>
+            <select id="servico" name="servico" class="field">
+              <option>Desenvolvimento de app ou sistema</option>
+              <option>Banco de dados</option>
+              <option>Cloud computing</option>
+              <option>Inteligência artificial</option>
+              <option>Ainda não sei</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="mensagem" class="mb-1.5 block text-sm font-medium">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required class="field resize-y" placeholder="Descreva o projeto, o prazo e o que já existe hoje."></textarea>
+          </div>
+          <!-- honeypot anti-spam: humanos não veem -->
+          <div class="hidden" aria-hidden="true">
+            <label for="empresa_site">Não preencha</label>
+            <input id="empresa_site" name="empresa_site" type="text" tabindex="-1" autocomplete="off">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-7 w-full sm:w-auto">Enviar mensagem</button>
+        <p id="form-status" role="status" aria-live="polite" class="mt-4 text-sm"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER (rodapé do papel timbrado) ================= -->
+<footer class="border-t-[6px] border-verde bg-grafite text-white/70">
+  <div class="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 text-sm md:flex-row md:items-center md:justify-between">
+    <a href="#" class="logo" aria-label="Inovacto Tecnologia, voltar ao início">
+      <svg viewBox="0 0 876 1510" aria-hidden="true">
+        <use href="#p-bandeira" fill="#fff"/><use href="#p-ia" fill="#00be9c"/><use href="#p-apps" fill="#00be9c"/><use href="#p-dados" fill="#00be9c"/><use href="#p-cloud" fill="#00be9c"/>
+      </svg>
+      <span>
+        <span class="logo-nome">INOVACTO</span>
+        <span class="logo-sub text-white">TECNOLOGIA</span>
+      </span>
+    </a>
+    <div class="flex flex-wrap gap-x-7 gap-y-2">
+      <span>Rio de Janeiro/RJ</span>
+      <a href="mailto:gustavo@inovacto.com.br" class="hover:text-white">gustavo@inovacto.com.br</a>
+    </div>
+    <p>&copy; <span id="ano">2026</span> Inovacto Tecnologia</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
