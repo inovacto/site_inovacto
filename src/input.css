@@ -79,6 +79,16 @@
     content: ""; @apply inline-block h-3 w-1.5 shrink-0 translate-y-px bg-verde;
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
   }
+
+  /* Texto longo da Política de Privacidade */
+  .politica { @apply leading-relaxed text-ink-soft; }
+  .politica > * + * { @apply mt-4; }
+  .politica h2 { @apply mt-14 scroll-mt-24 border-t-2 border-grafite pt-6 text-2xl font-medium tracking-[-0.01em] text-ink; }
+  .politica h3 { @apply mt-8 text-lg font-medium text-ink; }
+  .politica strong { @apply font-medium text-ink; }
+  .politica a { @apply text-verde-escuro underline underline-offset-2 hover:text-ink; }
+  .politica ul { @apply space-y-2 pl-5; list-style: square; }
+  .politica li::marker { color: var(--color-verde); }
 }
 
 /* ================= HERO: a diagonal da assinatura de e-mail ================= */

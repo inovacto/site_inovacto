@@ -28,7 +28,7 @@ jobs:
       # Publica só o que o site precisa (sem src, node_modules, package*.json)
       - run: |
           mkdir _site
-          cp -r index.html assets _site/
+          cp -r index.html assets privacy about _site/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
