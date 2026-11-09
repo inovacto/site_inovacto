@@ -20,5 +20,5 @@ Publique só: index.html, assets/ (node_modules, src e package*.json não vão p
 
 ## Formulário
 Configure `data-endpoint` no <form id="contact-form"> (Formspree, API própria etc.).
-Vazio = o envio abre o programa de e-mail do visitante com a mensagem pronta para gustavo@inovacto.com.br.
+Vazio = o envio abre o programa de e-mail do visitante com a mensagem pronta para contato@inovacto.com.br.
 O POST envia JSON: { nome, telefone, email, servico, mensagem }.

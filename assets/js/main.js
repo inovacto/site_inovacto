@@ -1,5 +1,5 @@
 (() => {
-  const EMAIL = "gustavo@inovacto.com.br";
+  const EMAIL = "contato@inovacto.com.br";
 
   const ano = document.getElementById("ano");
   if (ano) ano.textContent = new Date().getFullYear();
